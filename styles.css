@@ -1,0 +1,580 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  overflow: auto;
+}
+.nav {
+  margin: 0;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 11vh;
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(15, 2, 2, 1) 11.2%,
+    rgba(36, 163, 190, 1) 91.1%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav h1 {
+  margin: 10px 25px;
+  padding: 10px 22px;
+  background: transparent;
+  color: white;
+  font-weight: normal;
+}
+.navbar {
+  margin: right 25 px;
+  padding: 10px 22px;
+  background: transparent;
+}
+
+.navbar a {
+  text-decoration: none;
+  background: transparent;
+  padding: 10px 22px;
+  font-size: large;
+  color: white;
+}
+.navbar a:hover {
+  border-radius: 50px;
+  border: 1px solid white;
+}
+.ri-menu-line {
+  display: none;
+}
+.image {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    86.3deg,
+    rgba(0, 119, 182, 1) 3.6%,
+    rgba(8, 24, 68, 1) 87.6%
+  );
+  /* background-image: linear-gradient( 288deg,  rgba(0,85,255,1) 1.5%, rgba(4,56,115,1) 91.6% ); */
+}
+.profile {
+  /* background-color: aqua; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.profile img {
+  filter: saturate(1.5);
+  margin-top: 10%;
+  height: 58vh;
+  width: 28vw;
+  border-radius: 50%;
+  padding: 5px;
+  border-color: rgb(17, 1, 68);
+}
+.name {
+  background: transparent;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.name h2 {
+  background: transparent;
+  color: white;
+  text-align: center;
+  margin-top: 330px;
+  padding: 20px 20px;
+  font-size: 30px;
+  font-family: Cambria, Cochin, "Times New Roman", serif;
+}
+.name h3 {
+  background-color: transparent;
+  font-size: 29px;
+  font-family: Cambria, Cochin, "Times New Roman", serif;
+  color: white;
+  text-align: center;
+}
+
+.name button {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 119, 182, 1) 0%,
+    rgba(8, 24, 68, 1) 51%,
+    rgba(0, 119, 182, 1) 100%
+  );
+  color: white;
+  padding: 10px 20px;
+  margin: 25px 290px;
+  border-radius: 50px;
+  border: 1px solid white;
+  font-size: 19px;
+  letter-spacing: 0.7px;
+  word-spacing: 2px;
+  font-family: Cambria, Cochin, "Times New Roman", serif;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 10px #eee;
+}
+.name button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+#about-section {
+  position: relative;
+  margin: 0;
+  display: block;
+  width: 100%;
+  height: 750px;
+ 
+}
+
+.about { 
+  position: absolute;
+  height: 600px;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about1 {
+  text-align: center;
+  margin-top: 5px;
+}
+.about1 h1 {
+  font-variant: normal;
+  font-weight: 500;
+  padding: 5px 0 5px 0;
+  margin: 10px 0 10px 0;
+
+}
+
+.about1 .icons {
+  border: 1px solid rgb(49, 48, 48);
+  display: inline-block;
+  border-radius: 50px;
+  padding: 5px 10px 5px 10px;
+  margin: 20px 0 10px 0;
+}
+.about title {
+  font-size: 10px;
+}
+.about2 {
+  font-size: 1.5rem;
+  margin: 70px 30px 20px 30px;
+  line-height: 40px;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 80px 30px 70px 30px;
+  border-radius: 40px;
+  overflow-y: auto;
+
+}
+
+
+#skills {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.skillsection {
+  border-top: 1px solid rgb(255, 255, 255);
+  background-image: linear-gradient(
+    171.8deg,
+    rgba(5, 111, 146, 1) 13.5%,
+    rgba(6, 57, 84, 1) 78.6%
+  );
+  height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: wheat;
+}
+.titleskill {
+  background: transparent;
+  border-right: 1px solid rgb(255, 255, 255);
+  margin-right: 10px;
+  height: 90%;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.titleskill h1,
+i {
+  background-color: transparent;
+  margin: 17px 30px;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 15px 20px;
+}
+
+.skillsihave {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+}
+.skillset1 {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 50%;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.skillset1 h3 {
+  background: transparent;
+
+  margin: 10px 0;
+  font-size: 25px;
+  font-weight: 400;
+}
+.skillset1 p {
+  background: transparent;
+
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.skillset2 h3 {
+  background: transparent;
+
+  font-size: 25px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.skillset2 p {
+  background: transparent;
+
+  font-size: 20px;
+  font-weight: 300;
+}
+.skillset2 {
+  background: transparent;
+
+  width: 100%;
+  /* background-color: blueviolet; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50%;
+}
+.skill1 {
+  background: transparent;
+
+  width: 50%;
+  height: 90%;
+  border-right: 1px solid rgb(255, 255, 255);
+  /* border-left: 1px solid black; */
+  /* background-color: rgb(249, 61, 61); */
+  padding: 30px 30px;
+}
+.skill2 {
+  background: transparent;
+
+  width: 50%;
+  height: 90%;
+  /* background-color: brown; */
+  padding: 30px 30px;
+}
+.skill3 {
+  background: transparent;
+
+  width: 50%;
+  height: 90%;
+  /* border-left: 1px solid black; */
+
+  border-right: 1px solid rgb(255, 255, 255);
+  /* background-color: brown; */
+  padding: 30px 30px;
+}
+.skill4 {
+  background: transparent;
+
+  width: 50%;
+  height: 90%;
+  /* background-color: brown; */
+  padding: 30px 30px;
+}
+
+.education {
+  margin-top: 10px;
+  height: 800px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+}
+.edutitle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 40%;
+  height: 80%;
+  border-right: 1px solid black;
+}
+.edutitle h1 {
+  padding: 10px 20px;
+  margin: 100px 50px;
+  color: black;
+}
+.edudetails {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  line-height: 30px;
+  font-family: Cambria, Cochin, "Times New Roman", serif;
+}
+
+.edudetails .engineering {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(0, 52, 89, 1) 0%,
+    rgba(0, 168, 232, 1) 90%
+  );
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-delay: 0.2s;
+  transition-timing-function: ease-in-out;
+  height: 250px;
+  width: 60%;
+  border: 1px solid black;
+  margin: 20px 20px;
+  border-radius: 60px;
+  padding: 30px 130px;
+}
+.schooling:hover,
+.engineering:hover {
+  transform: scale(1.05);
+}
+
+.edudetails .engineering h3,
+p {
+  background-color: transparent;
+}
+.schooling {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(0, 52, 89, 1) 0%,
+    rgba(0, 168, 232, 1) 90%
+  );
+  height: 250px;
+  width: 60%;
+  border: 1px solid black;
+  margin: 20px 20px;
+  border-radius: 60px;
+  padding: 30px 130px;
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-delay: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+.schooling h3,
+p {
+  background-color: transparent;
+}
+
+.projects {
+  padding-top: 75px;
+  width: 100%;
+  height: 800px;
+  border-top: 1px solid black;
+}
+.project-title {
+  text-align: center;
+  height: 100px;
+  line-height: 40px;
+}
+.project-title h1 {
+  background-color: transparent;
+  font-weight: 500;
+}
+.project-title p {
+  font-size: large;
+}
+
+.project-data {
+  height: 100%;
+  display: flex;
+  align-items: normal;
+  justify-content: space-evenly;
+  padding: 35px 20px;
+  margin: 0 70px;
+}
+.project {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  height: 500px;
+  width: 400px;
+  border: 1px solid black;
+}
+
+.flip-card {
+  background-color: transparent;
+  height: 300px;
+  width: 280px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  color: black;
+}
+
+.flip-card-back {
+  background: linear-gradient(to right, #08599f, #000428);
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 20px;
+}
+.flip-card-back h1 {
+  background-color: transparent;
+  margin: 10px 5px 10px 5px;
+  padding: 10px 5px 10px 5px;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.static-part {
+  width: 100%;
+}
+
+.project-data img {
+  height: 300px;
+  width: 280px;
+  border-radius: 20px;
+}
+.project h2 {
+  font-size: x-large;
+  margin: 0 10px;
+  text-align: center;
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+.project .btnset {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 10px;
+}
+
+.project .btnset button {
+  border: 1px solid rgb(122, 116, 116);
+  width: 100px;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 40px;
+  margin: 0 10px;
+  font-size: 15px;
+  box-shadow: 0 0 20px #eee;
+}
+
+.contact {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(
+    109.6deg,
+    rgb(30, 35, 67) 11.2%,
+    rgb(12, 98, 119) 91.1%
+  );
+}
+.contact-info {
+  position: absolute;
+
+  background: transparent;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact-info h1,
+h2 {
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 50px;
+}
+
+.contact-info h2 {
+  color: white;
+  font-weight: 400;
+  background: transparent;
+  display: inline-block;
+  font-size: 25px;
+  padding: 6px 5px 6px 3px;
+}
+.contact-info h1 {
+  color: white;
+  background: transparent;
+}
+
+.ri-at-line {
+  color: whitesmoke;
+  margin-left: 0;
+  padding-left: 0;
+}
+.links {
+  background-color: transparent;
+  color: white;
+  float: right;
+  border-radius: 20px;
+  padding: 5px 0;
+}
+.copyright {
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  background: transparent;
+  color: white;
+}
+.copyright p {
+  margin: 20px 0 0 0;
+}
