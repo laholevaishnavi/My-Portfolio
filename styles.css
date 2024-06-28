@@ -125,6 +125,7 @@ html {
   background-size: 200% auto;
   color: white;
   box-shadow: 0 0 10px #eee;
+  cursor: pointer;
 }
 .name button:hover {
   background-position: right center; /* change the direction of the change here */
@@ -513,6 +514,7 @@ p {
   margin: 0 10px;
   font-size: 15px;
   box-shadow: 0 0 20px #eee;
+  cursor: pointer;
 }
 
 .contact {
