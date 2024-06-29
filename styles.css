@@ -51,6 +51,11 @@ html {
 }
 .ri-menu-line {
   display: none;
+  color: white;
+}
+.ri-close-line{
+  display:none ;
+  color: white;
 }
 .image {
   display: flex;

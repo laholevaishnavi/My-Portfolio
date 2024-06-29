@@ -16,6 +16,23 @@
 @media screen and (max-width: 1240px) {
   .navbar {
     display: none;
+    background-image: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgb(6, 32, 51) 0%,
+      rgb(18, 82, 108) 50%
+    );    
+    position: absolute;
+    /* z-index: 1; */
+    right: 0;
+    top: 0;
+    width: 50vh;
+    text-align: center;
+    height: 80vh;
+  }
+  .navbar a{
+    cursor: pointer;
+    display: block;
+    margin: 20px 50px;
   }
   .nav {
     background-image: radial-gradient(
@@ -23,12 +40,28 @@
       rgb(6, 32, 51) 0%,
       rgb(18, 82, 108) 50%
     );
+    position: relative;
+    position: fixed;
   }
 
+  
   .ri-menu-line {
+    cursor: pointer;
+    z-index: 1;
     display: inline-block;
     color: white;
+    transition: display 0.5s;
   }
+  .ri-close-line {
+    display:none ;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 2vh;
+    right: 3vw;
+    cursor: pointer;
+  }
+
   .image {
     display: block;
     width: 100%;
