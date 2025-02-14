@@ -205,13 +205,12 @@
     border: none;
   }
 
-  .projects {
-    height: 200vh;
-  }
+ 
   .project-data {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
   }
   .project {
     padding-top: 10px;
@@ -224,7 +223,7 @@
 
   .flip-card {
     height: 45vh;
-    width: 90vw;
+    width: 100%;
   }
   .flip-card-inner,
   .flip-card-front,

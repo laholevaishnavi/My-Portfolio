@@ -1,0 +1,18 @@
+h1{
+  text-align: center;
+}
+img{
+  /* height: 70vh; */
+  width: 65vw;
+}
+.certificates{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.certificate{
+  background-color: #515151;
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
